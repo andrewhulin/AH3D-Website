@@ -619,10 +619,11 @@ main .meta.name p {
   }
 }
 
+/*Top button-----------*/
+
 .hero__trigger-button.top {
-  top: 38%;
+  top: 33%;
   margin-left: -30px;
-  /*transform: rotate(270deg);*/
 }
 
 @media (min-width: 768px) {
@@ -631,10 +632,11 @@ main .meta.name p {
   }
 }
 
+/*Middle button-----------*/
+
 .hero__trigger-button.two {
   top: 45%;
   margin-left: -30px;
-  /*transform: rotate(270deg);*/
 }
 
 @media (min-width: 768px) {
@@ -650,10 +652,11 @@ main .meta.name p {
 }
 */
 
+/*Bottom button-----------*/
+
 .hero__trigger-button.bottom {
-  top: 52%;
+  top: 57%;
   margin-left: -30px;
-  /*transform: rotate(270deg);*/
 }
 
 @media (min-width: 768px) {
