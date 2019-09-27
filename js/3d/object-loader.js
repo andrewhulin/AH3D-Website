@@ -14,6 +14,9 @@
     var windowHalfX = window.innerWidth / 2;
     var windowHalfY = window.innerHeight / 2;
 
+    var angle = 0;
+    var radius = 500; 
+
     init();
     animate();
 
@@ -91,8 +94,13 @@
 
     function animate() {
 
-        camera.position.x += ( -mouseX - camera.position.x ) * .03;
+        camera.position.x = radius * Math.cos( angle );  
+        camera.position.z = radius * Math.sin( angle );
+        angle += 0.01;
+
+        //camera.position.x += ( -mouseX - camera.position.x ) * .03;
         camera.position.y += ( mouseY - 80 - camera.position.y ) * .03;
+
 
         requestAnimationFrame( animate );
 
