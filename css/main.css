@@ -1,3 +1,59 @@
+/*Typefaces*/
+
+@font-face {
+  font-family: 'neue_montrealbold';
+  src: url('font/neuemontreal-bold-webfont.woff2') format('woff2'),
+       url('font/neuemontreal-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neue_montrealbold_italic';
+  src: url('font/neuemontreal-bolditalic-webfont.woff2') format('woff2'),
+       url('font/neuemontreal-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neue_montrealitalic';
+  src: url('font/neuemontreal-italic-webfont.woff2') format('woff2'),
+       url('font/neuemontreal-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neue_montreallight';
+  src: url('font/neuemontreal-light-webfont.woff2') format('woff2'),
+       url('font/neuemontreal-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neue_montreallight_italic';
+  src: url('css/font/neuemontreal-lightitalic-webfont.woff2') format('woff2'),
+       url('css/font/neuemontreal-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neue_montrealregular';
+  src: url('font/neuemontreal-regular-webfont.woff2') format('woff2'),
+       url('font/neuemontreal-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .unslider {
   overflow: auto;
   margin: 0;
@@ -132,7 +188,7 @@ body.project-single .ajaxpage {
 
 body {
   background: white;
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "neue_montrealregular", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
   color: #353535;
   font-size: 1.125rem;
@@ -189,7 +245,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "neue_montrealregular", "Helvetica Neue", "Helvetica", sans-serif;
   line-height: 1.25;
   font-weight: 400;
   font-style: normal;
@@ -247,7 +303,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "neue_montrealregular", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 1rem;
   letter-spacing: 0;
 }
@@ -265,7 +321,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "neue_montrealregular", "Helvetica Neue", "Helvetica", sans-serif;
   color: #979797;
   font-size: 0.8125rem;
   letter-spacing: 0;
@@ -465,7 +521,7 @@ main .meta.sound a.muted {
 }
 
 main .close-button {
-  font-family: "Playfair Display", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "neue_montrealbold", "Helvetica Neue", "Helvetica", sans-serif;
   left: 50%;
   position: absolute;
   font-size: 2rem;
@@ -495,6 +551,7 @@ main .logo {
   top: 2.5rem;
   left: 1.25rem;
   z-index: 10;
+  width: 45px;
 }
 
 @media (min-width: 768px) {
@@ -604,7 +661,7 @@ main .meta.name p {
 }
 
 .hero__trigger-button {
-  font-family: "Playfair Display", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: "neue_montrealbold", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 3rem;
   font-weight: bold;
   position: absolute;
@@ -626,9 +683,10 @@ main .meta.name p {
   margin-left: -30px;
 }
 
+/*Desktop*/
 @media (min-width: 768px) {
   .hero__trigger-button.top {
-    top: 36%;
+    top: 34%;
   }
 }
 
@@ -661,7 +719,7 @@ main .meta.name p {
 
 @media (min-width: 768px) {
   .hero__trigger-button.bottom {
-    top: 55%;
+    top: 55.9%;
   }
 }
 

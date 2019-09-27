@@ -34,22 +34,29 @@
         var light = new THREE.AmbientLight( 0x959595, .01 );
         scene.add( light );
 
-        light1 = new THREE.PointLight( 0x083D77, .15, 0, Math.PI / 2, 1  );
+        //Far left
+        light1 = new THREE.PointLight( 0x000000, .15, 0, Math.PI / 2, 1  );
         light1.position.set(0, -80, 500);
         scene.add( light1 );
-        light2 = new THREE.PointLight( 0xE83520, .35, 0, Math.PI / 2, 1  );
+
+        //Top
+        light2 = new THREE.PointLight( 0x000000, .35, 0, Math.PI / 2, 1  );
         light2.position.set(0, 500, 0);
         scene.add( light2 );
-        light3 = new THREE.PointLight( 0x083D77, .32, 0, Math.PI / 2, 1  );
+
+        //Bottom
+        light3 = new THREE.PointLight( 0x000000, .32, 0, Math.PI / 2, 1  );
         light3.position.set(-500, 0, 10);
         scene.add( light3 );
-        light4 = new THREE.PointLight( 0xDA4167, .2, 0, Math.PI / 2, 1  );
+
+        //Right
+        light4 = new THREE.PointLight( 0x000000, .2, 0, Math.PI / 2, 1  );
         light4.position.set(500, 0, 10);
         scene.add( light4 );
 
         loader = new THREE.JSONLoader();
         loader.load( '3d/deer.js', function ( geometry ) {
-            mesh = new THREE.Mesh( geometry, new THREE.MeshPhongMaterial( { color: 0xffffff, overdraw: 0.5 } ) );
+            mesh = new THREE.Mesh( geometry, new THREE.MeshPhongMaterial( { color: 0xffffff, overdraw: 0.5, wireframe: true, } ) );
             mesh.position.y = 20;
             mesh.scale.set(2.9,2.9,2.9);
             scene.add( mesh );
